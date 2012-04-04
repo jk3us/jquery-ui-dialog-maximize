@@ -159,6 +159,7 @@
                         height: v_size.h
                     },
                     true);
+                this.option({resizable: false});
                 return this;
             },
 
@@ -180,7 +181,7 @@
             {
                 if (backup)
                     this._originals = {
-                        opts: { position: this.options.position, width: this.options.width, height: this.options.height },
+                        opts: { position: this.options.position, width: this.options.width, height: this.options.height, resizable: this.options.resizable },
                         rect: $.extend({ width: this.uiDialog.innerWidth(), height: this.uiDialog.innerHeight() }, this.uiDialog.position())
                     };
 
